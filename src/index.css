@@ -1,0 +1,124 @@
+:root {
+    --text: #ffffff;
+    --bg: #1F1F1F;
+
+    --bmw-black: #0A0A0A;
+    --bmw-graphite: #1C1F26;
+    --bmw-blue: #0046AD;
+    --bmw-silver: #6C7A89;
+    --bmw-white: #F5F7FA;
+
+    --font: "Archivo Black", sans-serif;
+    
+    --light-green: #2ecc71;
+    --tropical-teal: #00a8ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: rgba(245,247,250,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 999;
+    animation: decima 1s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 0px 3px 10px var(--bmw-graphite);
+    animation: esquerda 2s ease-in-out;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 10px var(--bmw-graphite);
+    animation: direita 2s ease-in-out;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+iframe {
+    border-radius: 15px;
+    box-shadow: 0px 5px 0px black;
+}
+
+/* Animações Globais */
+@keyframes decima {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes esquerda {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes direita {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fromBottom {
+    0% { transform: translateY(100px) translateX(-50%); }
+    100% { transform: translateY(0px) translateX(-50%); }
+}
+@media (width <= 1000px){
+
+    nav{
+        gap: 6px;
+    }
+
+
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+@media (max-width: 1000px){
+
+    nav{
+        height: 60px;
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+  
+
+    a{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}}
