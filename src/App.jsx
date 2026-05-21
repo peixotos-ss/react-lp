@@ -95,9 +95,15 @@ function App() {
       </main>
 
       <footer>
-        <a href="https://youtube.com" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
+         <a href="https://www.facebook.com" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
       </footer>
     </>
   );
