@@ -1,13 +1,13 @@
 import s from "./App.module.css";
 import img1 from '/01.jpg';
-import img2 from '/02.jpg'; 
-import img3 from '/03.jpg'; 
+import img2 from '/02.jpg';
+import img3 from '/03.jpg';
 
 
 function App() {
   return (
     <>
-      <nav>
+      {/* <nav>
         
         <span className={s.navitems}>
           <i class="fa-solid fa-house"></i>
@@ -36,8 +36,23 @@ function App() {
             Contact
           </a>
         </span>
+      </nav> */}
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">Navbar</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link" href="#">Home</a>
+              <a className={s.navLink} href="#">Features</a>
+              <a className={s.navLink }href="#">Pricing</a>
+              <a className={s.navLink} href="#">Disabled</a>
+            </div>
+          </div>
+        </div>
       </nav>
-
       <main>
         <section className={s.s1} id="s1">
           <h1>BMW</h1>
@@ -54,7 +69,7 @@ function App() {
           </div>
 
           <div className={s.card}>
-          
+
             <img src={img2} alt="BMW Série 5" />
             <div>
               <h4>BMW Série 5 Sedã</h4>
@@ -63,7 +78,7 @@ function App() {
           </div>
 
           <div className={s.card}>
-          
+
             <img src={img3} alt="BMW X3" />
             <div>
               <h4>BMW X3 M50 xDrive</h4>
@@ -95,15 +110,15 @@ function App() {
       </main>
 
       <footer>
-         <a href="https://www.facebook.com" target="_blank">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
       </footer>
     </>
   );
