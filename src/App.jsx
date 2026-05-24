@@ -45,10 +45,10 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link" href="#">Home</a>
-              <a className={s.navLink} href="#">Features</a>
-              <a className={s.navLink }href="#">Pricing</a>
-              <a className={s.navLink} href="#">Disabled</a>
+              <a className="nav-link" href="#s1">Home</a>
+              <a className="nav-link"href="#s2">Modelos</a>
+              <a className="nav-link"href="#s3">Videos</a>
+              <a className="nav-link" href="#s4">Contato</a>
             </div>
           </div>
         </div>
